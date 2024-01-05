@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,20 @@
     <title>Document</title>
     <style>
         /* Estilos para centralizar o conteúdo em um quadrado branco */
+        
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #000000; /* Cor de fundo do corpo */
+            background-color: #000000;
+            /* Cor de fundo do corpo */
         }
-
+        
         .container {
-            background-color: white; /* Cor de fundo do quadrado branco */
+            background-color: white;
+            /* Cor de fundo do quadrado branco */
             padding: 20px 60px;
             border-radius: 10px;
             box-shadow: 0px 0px 50px 0px #1900ff;
@@ -27,41 +31,41 @@
             flex-direction: column;
             align-items: center;
         }
-
+        
         select {
             padding: 10px;
             margin: 5px;
             border-radius: 5px;
             cursor: pointer;
         }
-
+        
         button {
-            
-            background-color: rgb(0, 0, 0); /* Cor de fundo azul para os botões */
+            background-color: rgb(0, 0, 0);
+            /* Cor de fundo azul para os botões */
             padding: 10px 20px;
             margin: 5px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            color: #ffffff; /* Texto branco para melhor contraste */
-            
-            
+            color: #ffffff;
+            /* Texto branco para melhor contraste */
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div>
-            <button id="pf">PF</button>
+            <button id="pf">FRENTE</button>
         </div>
-        
+
         <div>
-            <button id="pe">PE</button>
-            <button id="pd">PD</button>
+            <button id="pe">ESQUERDA</button>
+            <button id="pd">DIREITA</button>
         </div>
-        
+
         <div>
-            <button id="pt">PT</button>
+            <button id="pt">COSTAS</button>
         </div>
 
         <div>
@@ -80,11 +84,12 @@
     </div>
 
     <script>
-        function goToInicioPage(){
+        function goToInicioPage() {
             window.location.href = 'site.html';
         }
     </script>
 
     <script src="../mqtt/mqtt02.js"></script>
 </body>
+
 </html>

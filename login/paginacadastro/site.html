@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Escolha</title>
+    <!-- Adicione o link para o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000000;
+            padding: 20px;
+        }
+        
+        .choice-container {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .choice-btn {
+            margin: 10px;
+            padding: 0;
+        }
+        
+        .choice-img {
+            width: 450px;
+            /* Ajuste o tamanho da imagem conforme necessário */
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="choice-container">
+            <h2>ESCOLHA UM</h2>
+
+
+            <a href="#" class="btn choice-btn" onclick="redirecionar(1)">
+                <img src="../escolha/foto.png" alt="Tipo 1" class="choice-img">
+                <p>MostraBot</p>
+            </a>
+
+
+            <a href="#" class="btn choice-btn" onclick="redirecionar2(2)">
+                <img src="../escolha/Screenshot_82.png" alt="Tipo 2" class="choice-img">
+                <p style="color:red;" style="background-color:rgb(120, 120, 121);">PlacaMaker</p>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function redirecionar() {
+            window.location.href = "cadastro2.html";
+        }
+
+        function redirecionar2() {
+            window.location.href = "";
+        }
+    </script>
+
+</body>
+
+</html>
